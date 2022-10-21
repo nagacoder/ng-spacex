@@ -3,16 +3,29 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DragonComponent } from './pages/dragon/dragon.component';
+import { LayoutsComponent } from './components/layouts/layouts.component';
+import { HeaderComponent } from './components/header/header.component';
+import { HomeComponent } from './pages/home/home.component';
+import { CoreComponent } from './pages/core/core.component';
+import { RocketsComponent } from './pages/rockets/rockets.component';
+import { MissionComponent } from './pages/mission/mission.component';
+import { InfoComponent } from './pages/info/info.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DragonComponent,
+    LayoutsComponent,
+    HeaderComponent,
+    HomeComponent,
+    CoreComponent,
+    RocketsComponent,
+    MissionComponent,
+    InfoComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
