@@ -1,9 +1,15 @@
-<div class="bg-white py-12">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="lg:text-center">
-      <p class="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">Hello From Dragon Pages</p>
-      <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.</p>
+<div class="bg-white py-12 px-12 ">
+  <div  class="flex">
+  <div *ngFor="let dragon of dragons" class="max-w-sm rounded overflow-hidden shadow-lg ml-5">
+    <img class="w-full h-72" src="{{dragon.flickr_images[0]}}" alt="Sunset in the mountains">
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2">{{dragon.name}}</div>
+      <p class="text-gray-700 text-base">
+        {{renderDescription(dragon.description)}}
+      </p>
     </div>
+    
   </div>
+</div>
 </div>
 
